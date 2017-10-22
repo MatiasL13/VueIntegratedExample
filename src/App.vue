@@ -2,8 +2,10 @@
     <div class="container">
     	<div class="row">
     	    	<my-header></my-header>
-
+                <transition :enter-active-class="'animated fadeIn '"   :leave-active-class="'animated  fadeOut' " mode="out-in">
     	    	<router-view></router-view>
+                    
+                </transition>
 	    </div>
     </div>
 </template>
